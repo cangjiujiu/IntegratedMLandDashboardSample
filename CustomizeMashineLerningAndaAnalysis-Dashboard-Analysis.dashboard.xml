@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="IRIS" version="26" zv="IRIS for Windows (x86-64) 2022.1.2 (Build 574U)" ts="2023-06-29 16:02:12">
+<Document name="CustomizeMashineLerningAndaAnalysis-Dashboard-Analysis.dashboard.DFI">
+<dashboard xmlns="http://www.intersystems.com/deepsee/library" name="Analysis" folderName="CustomizeMashineLerningAndaAnalysis/Dashboard" title="Analysis" description="" keywords="" owner="" shared="true" public="true" locked="false" resource="" timeCreated="2023-06-26T05:57:03.284Z" createdBy="_SYSTEM" category="" bookCover="" scheme="" worklistCount="2" snapTo="true" snapGrid="true" gridRows="10" gridCols="10" canResize="true" canModify="true" showTitleBar="true" titleBarOpacity="" titleBarColor="" selectedTitleBarOpacity="" selectedTitleBarColor="" titleBarTextColor="" selectedTitleBarTextColor="" titleBarFont="" companyName="" companyLogo="" companyStyle="" backgroundColor="white" backgroundImage="none" backgroundRepeat="no-repeat" backgroundSize="100% 100%" backgroundOpacity="1" widgetBorders="1px solid #F0F0F0" widgetBordersSwitch="edit" widgetBordersColor="#F0F0F0" widgetBordersStyle="solid" widgetBordersWidth="1" widgetBordersToggle="true">
+  <widget name="Bubble" type="pivot" subtype="bubbleChart" subtypeClass="bubbleChart" title="" dataSource="CustomizeMashineLerningAndaAnalysis/DeepSee/xxxx.kpi" dataLink="" drillDownDataSource="" width="200" height="200" sidebarContent="" showSidebar="false" sidebarWidth="" maximized="false" homeRowL="0" homeColL="0" colSpanL="10" rowSpanL="5" showToolbar="true" showToolbarBottomBorder="false" showToolbarOnlyWhenMaximized="false" colorToolbar="#F0F0F0" opacityToolbar="1" backgroundColor="#F0F0F0" opacity="1" theme="" dataColorList="">
+    <control name="" action="applyFilter" target="Bubble" targetProperty="p1" location="widget" type="dropdown" controlClass="" label="p1" title="" value="" text="" readOnly="false" valueList="" displayList="" activeWhen="">
+      <valueRequired>false</valueRequired>
+    </control>
+    <property name="chartToggle">none</property>
+    <override name="bubbleChart">{axisLineStyle:'fill:transparent;',backgroundStyle:'fill:#f8f0f0;stroke:none;opacity:0.6;',borderStyle:'fill:#FFB0B0;',hasZoom:true,legendVisible:'false',seriesColorScheme:'pastel',seriesColorsOverride:'#8869a5,#c58ade,#b1beea,#90c4e9,#8095ce,#FEA78C,#FFA3A6,#F583B4,#CD69A7,#ED7179',stripeStyle:'fill:transparent;',xAxis:{_type:'axis'},yAxisList:[{_type:'axis'}],_type:'bubbleChart'}</override>
+  </widget>
+  <widget name="Histogram" type="pivot" subtype="columnChart" subtypeClass="barChart" title="" dataSource="CustomizeMashineLerningAndaAnalysis/DeepSee/newdemo/HistogramKPI.kpi" dataLink="" drillDownDataSource="" width="200" height="200" sidebarContent="" showSidebar="false" sidebarWidth="" maximized="false" homeRowL="5" homeColL="4" colSpanL="6" rowSpanL="5" showToolbar="false" showToolbarBottomBorder="true" showToolbarOnlyWhenMaximized="false" colorToolbar="rgb(92,142,43)" opacityToolbar=".48" backgroundColor="#F0F0F0" opacity="1" theme="" dataColorList="">
+    <property name="chartToggle">none</property>
+    <property name="pivotSelect"></property>
+    <property name="showDimensions">1</property>
+    <override name="barChart">{backgroundStyle:'fill:rgb(218,129,61);stroke:none;opacity:0.38;',legendVisible:'false',seriesColorScheme:'pastel',seriesColorsOverride:'#8869a5,#c58ade,#b1beea,#90c4e9,#8095ce,#FEA78C,#FFA3A6,#F583B4,#CD69A7,#ED7179',xAxis:{_type:'axis'},yAxisList:[{_type:'axis'}],_type:'barChart'}</override>
+    <override name="legend">{legendLabels:'Name,Name2',legendPosition:'right',legendStyle:'opacity:1;',_type:'chartLegend'}</override>
+  </widget>
+  <widget name="Pie" type="pivot" subtype="donutChart" subtypeClass="pieChart" title="" dataSource="CustomizeMashineLerningAndaAnalysis/DeepSee/xxxx2.kpi" dataLink="" drillDownDataSource="" width="200" height="200" sidebarContent="" showSidebar="false" sidebarWidth="" maximized="false" homeRowL="5" homeColL="0" colSpanL="4" rowSpanL="5" showToolbar="true" showToolbarBottomBorder="true" showToolbarOnlyWhenMaximized="false" colorToolbar="#F0F0F0" opacityToolbar="1" backgroundColor="#F0F0F0" opacity="1" theme="" dataColorList="">
+    <property name="chartToggle">none</property>
+    <property name="pivotSelect"></property>
+    <property name="showDimensions">1</property>
+    <override name="pieChart">{backgroundStyle:'fill:#f37da9;stroke:none;opacity:0.42;stroke-width:0;',borderStyle:'stroke-dasharray:1,2;',legendVisible:'false',seriesColorScheme:'pastel',seriesColorsOverride:'#8869a5,#c58ade,#b1beea,#90c4e9,#8095ce,#FEA78C,#FFA3A6,#F583B4,#CD69A7,#ED7179',xAxis:{_type:'axis'},yAxisList:[{_type:'axis'}],holeSize:0.25,pieScale:1.5,_type:'pieChart'}</override>
+  </widget>
+</dashboard>
+</Document></Export>
