@@ -46,3 +46,8 @@ Other CSV displays
 
 ![image](https://github.com/cangjiujiu/IntegratedMLandDashboardSample/assets/124135718/76a73470-c395-492e-bbe6-a6c602dd92c0)
 
+Due to the embedded dashboard of iris on the page, if you encounter cross domain issues that cannot be displayed properly, you can visit iris to view the chart
+
+![image](https://github.com/cangjiujiu/IntegratedMLandDashboardSample/assets/124135718/d527f988-4703-40a2-ad48-d05c842b0c7d)
+
+
