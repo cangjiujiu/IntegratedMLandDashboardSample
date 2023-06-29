@@ -10,12 +10,15 @@ Execution
 Do # # class (customizemashinelerningandaanalysis. Util. Tool). Deployment()
 
 Modify Vue file and add config.js in dist/static
+
 ![image](https://github.com/cangjiujiu/IntegratedMLandDashboardSample/assets/124135718/7854fb42-d65d-4300-a052-588b0fc82534)
 
 
 Change 2 to "/Analysis"+create a namespace name such as "/AnalysisUSER"
 
 Then start the front-end package, you can use tomcat
+
+If you are deploying dist locally through tomcat, visit the localhost: 52774/dist access page
 
 ![image](https://github.com/cangjiujiu/IntegratedMLandDashboardSample/assets/124135718/05f32abf-da9d-4de5-89e6-5c1621f6cb7a)
 
