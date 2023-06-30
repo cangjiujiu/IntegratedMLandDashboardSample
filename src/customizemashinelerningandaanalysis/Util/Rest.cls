@@ -16,35 +16,7 @@ XData UrlMap [ XMLNamespace = "http://www.bjgoodwill.com/urlmap" ]
 </Routes>
 }
 
-ClassMethod Init() As %Status
-{
-	//set tt=##class(%CSP.BinaryStream).%New()
-	//w tt.FileName
-	//W %request.MimeData("input",1)
-	set stream=%request.MimeData("input",1)
-	//w stream.FileName
-	set table={}
-	set table.TableName=$p(stream.FileName,".csv",1)
-	set table.Properties=[]
-	set table.Predict=%request.Data("Predict",1)
-	set line1=stream.ReadLine()
-	set length=$l(line1,",")
-	for i=1:1:length
-	{
-		Do table.Properties.%Push($p(line1,",",i))
-	}
-	//set Predict=%request.Data("Predict",1)
-	set stream2=%request.MimeData("input",1)
-	Do ##class(customizemashinelerningandaanalysis.Util.Tool).CreateTable(table)
-	Do ##class(customizemashinelerningandaanalysis.Data.women113).import(stream2)
-	Do ##class(customizemashinelerningandaanalysis.Data.women113).createModel()
-	Do ##class(customizemashinelerningandaanalysis.Util.Tool).TrainModel("Customize"_table.TableName)
-    //Do ##class(customizemashinelerningandaanalysis.Util.Tool).createHistogramKPI($p(stream.FileName,".csv",1),"height")
-    //Do ##class(customizemashinelerningandaanalysis.Util.Tool).createBubbleKPI($p(stream.FileName,".csv",1),"height")
-    // Do ##class(customizemashinelerningandaanalysis.Util.Tool).createPieKPI($p(stream.FileName,".csv",1))
-     //Do ##class(customizemashinelerningandaanalysis.Util.Tool).copydashboarf($p(stream.FileName,".csv",1),"weight")
-	Quit $$$OK
-}
+
 
 ClassMethod add() As %Status
 {
@@ -63,8 +35,7 @@ ClassMethod add() As %Status
 	Do ##class(customizemashinelerningandaanalysis.Util.Tool).CreateTable(table)
 	Do $ClassMethod("customizemashinelerningandaanalysis.Data."_table.TableName_"","import",stream2)
 	Do $ClassMethod("customizemashinelerningandaanalysis.Data."_table.TableName_"","createModel")
-	Do ##class(customizemashinelerningandaanalysis.Data.women).import(stream2)
-    Do ##class(customizemashinelerningandaanalysis.Data.women).createModel()
+
 	Do ##class(customizemashinelerningandaanalysis.Util.Tool).TrainModel("Customize"_table.TableName)
 	Do ##class(customizemashinelerningandaanalysis.Util.Tool).createHistogramKPI($p(stream.FileName,".csv",1),table.Predict)
     Do ##class(customizemashinelerningandaanalysis.Util.Tool).createBubbleKPI($p(stream.FileName,".csv",1),table.Predict)
