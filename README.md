@@ -1,28 +1,39 @@
 # IntegratedMLandDashboardSample
-Create a new namespace
 
-Terminal uses zpm IntegratedMLandDashboardSample to install the project to a new namespace
+A simple data analysis example created in IntegratedML and Dashboard
 
-Import and compile CustomizeMaschineLerningAndaAnalysis-Dashboard-Analysis.dashboard.xml
+# IRIS version 
 
-Execution
+IRIS for Windows (x86-64) 2022.1.2 (Build 574U) Fri Jan 13 2023 15:08:27 EST
 
-Do # # class (customizemashinelerningandaanalysis. Util. Tool). Deployment()
+# ZPM installation
 
-Modify Vue file and add config.js in dist/static
+zpm:USER>install IntegratedMLandDashboardSample
 
-![image](https://github.com/cangjiujiu/IntegratedMLandDashboardSample/assets/124135718/7854fb42-d65d-4300-a052-588b0fc82534)
+# Process Deployment 
 
 
-Change 2 to "/Analysis"+create a namespace name such as "/AnalysisUSER"
+Use or create a new namespace
 
-Then start the front-end package, you can use tomcat
+Import code into the corresponding namespace
 
-If you are deploying dist locally through tomcat, visit the localhost: 52774/dist access page
+Execute in Terminal:
+
+Do # # class (customizemashinelerningandaanalysis. Util. Tool) Deployment()
+
+The front-end is the dist folder under the Vue folder. Before using it, open dist static config.js and modify the IP and port to be used by the back-end server. Then you need to modify the test of iframeUrl to "Analysis"+the namespace used by the backend, such as "AnalysisUSER"
+
+Then start the front-end file (you can place the dist folder in tomcat to start using)
+
+The access address is:
+
+Ip: port/dist
+
 
 ![image](https://github.com/cangjiujiu/IntegratedMLandDashboardSample/assets/124135718/323ada13-d45e-4b3b-a451-165dec5ffcce)
 
 
+# HOW TO USE
 
 Taking women.csv as an example
 
@@ -41,12 +52,14 @@ After successfully returning, refresh the current page and click on the secondar
 ④ The embedded iris dashboard displays some data previously imported into CSV
 
 
-Other CSV displays
+# Other CSV displays
 
 
 ![image](https://github.com/cangjiujiu/IntegratedMLandDashboardSample/assets/124135718/e9334c6c-a8b3-4aff-9570-d914d5d796c0)
 
 ![image](https://github.com/cangjiujiu/IntegratedMLandDashboardSample/assets/124135718/76a73470-c395-492e-bbe6-a6c602dd92c0)
+
+# Tips
 
 Due to the embedded dashboard of iris on the page, if you encounter cross domain issues that cannot be displayed properly, you can visit iris to view the chart
 
