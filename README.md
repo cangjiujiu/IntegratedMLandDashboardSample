@@ -20,13 +20,15 @@ Then start the front-end package, you can use tomcat
 
 If you are deploying dist locally through tomcat, visit the localhost: 52774/dist access page
 
-![image](https://github.com/cangjiujiu/IntegratedMLandDashboardSample/assets/124135718/05f32abf-da9d-4de5-89e6-5c1621f6cb7a)
+![image](https://github.com/cangjiujiu/IntegratedMLandDashboardSample/assets/124135718/323ada13-d45e-4b3b-a451-165dec5ffcce)
+
+
 
 Taking women.csv as an example
 
 1. Select a CSV file to upload, and the CSV file name and data column name must not contain other symbols such as spaces
 
-2. Fill in the column name that needs to be predicted, such as height
+2. Fill in the column name that needs to be predicted, such as “height”
 
 3. Click OK to wait for the interface to return
 
