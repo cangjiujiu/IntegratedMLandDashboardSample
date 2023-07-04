@@ -1,3 +1,6 @@
+[![Quality Gate Status](https://community.objectscriptquality.com/api/project_badges/measure?project=intersystems_iris_community%2FIntegratedMLandDashboardSample&metric=alert_status)](https://community.objectscriptquality.com/dashboard?id=intersystems_iris_community%2FIntegratedMLandDashboardSample)   
+
+
 # IntegratedMLandDashboardSample
 
 A simple data analysis example created in IntegratedML and Dashboard
