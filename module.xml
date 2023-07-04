@@ -3,7 +3,7 @@
   <Document name="integratedmlanddashboardsample.ZPM">
     <Module>
       <Name>integratedmlanddashboardsample</Name>
-      <Version>1.0.1</Version>
+      <Version>1.0.2</Version>
       <Packaging>module</Packaging>
       <Resource Name="UnitTests.PKG"/>
       <Resource Name="customizemashinelerningandaanalysis.PKG"/>
