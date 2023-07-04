@@ -122,6 +122,7 @@ ClassMethod CreateTest() As %Status
 ClassMethod CreateModel(TableName As %String, PREDICTProperty As %String) As %Status
 {
 	Do $classmethod("customizemashinelerningandaanalysis.Data."_TableName,"createModel")
+        Quit  $$$OK
 }
 
 ClassMethod TrainModel(TableName) As %Status
